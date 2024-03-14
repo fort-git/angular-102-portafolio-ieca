@@ -1,0 +1,43 @@
+<div class="container">
+  <h1>Fundamentos Angular</h1>
+
+  <h2># Interpolación</h2>
+  <div class="interpolacion">
+    {{title}}
+  </div>
+
+  <h2># Binding</h2>
+  <div class="binding">
+    <input type="text" [value]="email">
+    <button [disabled]="btnDisabled">Enviar</button>
+  </div>
+
+  <h2># Event Binding</h2>
+  <div class="eventBinding">
+    <button (click)="mostrarAlert()">Enviar</button>
+  </div>
+
+  <hr>
+
+  <div class="contadorObejas">
+    <div class="box">
+      <span>
+        {{ "}:".repeat(contadorOvejas)}}
+      </span>
+    </div>
+  </div>
+  <button (click)="contarOveja()">Contar</button>
+
+  <br>
+  <h2># Data Binding</h2>
+  <div class="dataBinding">
+    <h5>ngModel</h5>
+    <span>Nombre: </span>
+    <div>
+      <input type="text" #nameInput="ngModel" [(ngModel)]="persona.nombre">
+      <span class="message" [class.error]="persona.nombre !== ''"></span>
+
+    </div>
+  </div>
+
+</div>
