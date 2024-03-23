@@ -27,7 +27,7 @@ function trabajar () {
 
   setTimeout(() => {
     console.log('Esperando un nuevo dia')
-    //despertar()
+    //despertar() //? SE VUELVE A EJECUTAR TODA LA RUTINA
   }, 8000)
 }
 
