@@ -18,7 +18,7 @@ const server = http.createServer(async (request, response) => {
     //Lo transforma en json
     const json = await responseFetch.json()
 
-    console.log('Presentando data ::: ')
+    console.log('Presentando data ::::: ')
 
     response.end(JSON.stringify(json))
   } catch (error) {
